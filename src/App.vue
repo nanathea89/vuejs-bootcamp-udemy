@@ -1,19 +1,27 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <LifecyleHooks></LifecyleHooks>
-  <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+  <div id="navbar">
+    <router-link to="/">Main</router-link> | 
+    <router-link to="/conditional">Conditional</router-link> | 
+    <router-link to="/looping">Looping</router-link> | 
+    <router-link to="/lifecycle">Lifecycle</router-link>
+    <router-view></router-view>
+  </div>
+   
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import LifecyleHooks from './components/LifecycleHooks.vue'
 
 export default {
   name: 'App',
-  components: {
-    // HelloWorld
-    LifecyleHooks
-  }
+  // components: {
+  //   // HelloWorld
+  //   // LifecyleHooks,
+  //   // ConditionalComponent,
+  //   // LoopingComponent,
+  //   // MainComponent
+  // }
 }
 </script>
 
